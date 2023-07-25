@@ -136,16 +136,57 @@ body{
 
 /*  media queries */
 
-@media (max-width: 600px) {
-    #inputdiv {
-      width: 80%;
-      height: 150px;
-    }
-  }
 
-  @media (max-width: 600px) {
-    #output {
-      width: 80%;
-      height: 150px;
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    /* For laptops and tablets */
+    #main {
+        width: 70vh;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
     }
-  }
+
+    #output {
+        width: 70vh;
+        left: 85%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    #leftdiv {
+        transform: translate(60%, 40%);
+    }
+
+    #rightdiv {
+        transform: translate(45%, 40%);
+    }
+}
+
+@media (max-width: 600px) {
+    /* For mobile screens */
+    #main {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    #output {
+        width: 90%;
+        left: 85%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    #inputdiv {
+        width: 80%;
+        height: 150px;
+        transform: translate(10%, 30%);
+    }
+
+    #leftdiv {
+        transform: translate(0, 40%);
+    }
+
+    #rightdiv {
+        transform: translate(0, 40%);
+    }
+}
